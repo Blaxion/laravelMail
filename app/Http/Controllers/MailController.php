@@ -18,7 +18,7 @@ class MailController extends Controller
             "img" => "img",
             "content" => "***content here***"
         ];
-        // Mail::to('khibaziev.smurf@gmail.com')->send(new Contactus($mail_details));
+        // Mail::to('khibaziev. smurf@gmail.com')->send(new Contactus($mail_details));
         Mail::send('mails.contactUS', 
             $mail_details
         , function($message) {
